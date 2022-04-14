@@ -1,9 +1,11 @@
-Rust が街にやってきた
+# Rust が街にやってきた
 
 ## 1. イントロダクション
 ## 1.1 目的
 `Rust` のことを知り将来触れる機会があった時に「そういえばこんな話聞いていたな」と参考になれば嬉しいなと思います。  
 もちろん明日から `Rustacean` になってもらえたらなお嬉しいです。
+
+![image](https://user-images.githubusercontent.com/10294378/163308342-836be04f-530a-472f-8b42-1a8081d3da18.png)
 
 ### 今日の目標
 - `Rust` がどんな言語なのか学ぶ
@@ -19,12 +21,10 @@ Rust が街にやってきた
   - 興味深い機能を提供すること
   - 開発プロセスがオープンであること
 
-<blockquote class="twitter-tweet" lang="en">
- <a href="https://twitter.com/reibitto/status/1432844799359389705?s=20"></a>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></blockquote>
+![image](https://user-images.githubusercontent.com/10294378/163308416-bd87c0ec-58f6-4b36-bdea-c4b3863a0eb4.png)
 
 :bulb: **キーポイント** :bulb:  
-Rust は Python, R と比べて長所があればもちろん短所もあります。
+Rust は Python, R と比べて長所があればもちろん短所もあります。  
 プログラミング言語に優劣はなく「いつ、どこで、どのように使うか」が重要です。
 
 ## 2. インストールから Hello world! そして Hello cargo! まで
@@ -55,6 +55,8 @@ rust-tutorial
 └ Dockerfile
 ```
 
+Dockerfile
+
 ```Dockerfile:rust-tutorial
 FROM ubuntu:latest
 
@@ -69,6 +71,8 @@ RUN apt-get update \
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain stable
 ENV PATH $PATH:$HOME/.cargo/bin
 ```
+
+devcontainer.json
 
 ```json:devcontainer.json
 {
@@ -99,7 +103,7 @@ ENV PATH $PATH:$HOME/.cargo/bin
 
 ```Rust
 fn main() {
-    println!("{}", "Hello, world!");
+    println!("Hello, world!");
 }
 ```
 
@@ -119,6 +123,8 @@ Hello, world!
 ```
 
 これで Rust の一連の流れができました！
+
+![image](https://user-images.githubusercontent.com/10294378/163308958-e6b2ebaa-9e31-41c6-9adf-a692705ea34e.png)
 
 ### 2.4. Hello cargo!
 `rustc` を直接実行しコンパイルをしてもよいですが実際のコーディングでは `cargo` コマンドを利用することが多いです。  
@@ -170,11 +176,15 @@ cargo run
 実務などでコーディングをする時に利用するのは `cargo` です。
 `cargo` が `rustc` を呼び出すので直接 `rustc` を実行することはないです。
 
+![image](https://user-images.githubusercontent.com/10294378/163309094-20702de0-71d9-420f-9e17-b5037620c7e7.png)
+
 ## 3. Python/R から Rust への準備体操
 
 ### 3.1. FizzBuzz を実装してみる
 **問題**  
 1 から 100 までの数を順に 1 行ずつ出力するプログラムを書いてください。ただし、3 の倍数のときは数の代わりに `Fizz` と、 5 の倍数の時には `Buzz` と表示してください。そして 3 と 5 の倍数の時は `FizzBuzz` と表示してください。
+
+![image](https://user-images.githubusercontent.com/10294378/163309294-26a137ef-ba36-43ca-8a13-853d92f38870.png)
 
 ---
 
@@ -253,6 +263,8 @@ fn main() {
 
 *マクロ：非常に長くなる関数などをまとめて省略したもの。 `C++` などにも存在する機能
 
+![image](https://user-images.githubusercontent.com/10294378/163311257-4a562569-b562-4efe-9c1f-0794b1b28143.png)
+
 ## 4. Rust は難しい？
 ### 4.1. 学習が難しいポイント
 Rust はいくつか学習が難しいポイントがありそこで挫折してしまうことがあり、そこから習得が難しいというイメージがついていることがあります。
@@ -266,7 +278,11 @@ Rust はいくつか学習が難しいポイントがありそこで挫折して
 ### 4.2. ガードレールが多い
 Rust はいくつかの機能によって、他の言語ではウヤムヤにできたことを無視せずにコーディングする必要があるためなれないうちはコンパイラーが何度もエラーを出します。これによりイライラしたり難しいと感じたりするのではないかと思います。
 
+![image](https://user-images.githubusercontent.com/10294378/163311410-5eea2405-57b0-4db2-9c36-402740186185.png)
+
 これはよくないことのように見えますが安全のためのガードレールにぶつかっている状態であるといえ、コーディング中は見つからなかったが実務で実行したらバグが見つかったというケースが減らすことにつながります。
+
+![maxresdefault](https://user-images.githubusercontent.com/10294378/163311718-83e3fef7-28af-4529-a654-59a167b4e6e7.jpeg)
 
 例) Python でリストの末尾からデータを取り出す
 
@@ -319,6 +335,10 @@ a = 3
 There is no element in b
 c = 3
 ```
+
+:bulb: **キーポイント** :bulb:  
+Rust は学習が難しく慣れるまではストレスがたまるポイントがいくつかあります。  
+ガードレールとして存在しているそれらの機能を理解しておくことが大事です。
 
 ## 5. 様々な分野でのRust
 
