@@ -176,7 +176,7 @@ cargo run
 実務などでコーディングをする時に利用するのは `cargo` です。
 `cargo` が `rustc` を呼び出すので直接 `rustc` を実行することはないです。
 
-![image](https://user-images.githubusercontent.com/10294378/163309094-20702de0-71d9-420f-9e17-b5037620c7e7.png)
+![163309094-20702de0-71d9-420f-9e17-b5037620c7e7](https://user-images.githubusercontent.com/10294378/163321167-cdf8113b-cb50-47f1-a9cd-7193301f4f5b.png)
 
 ## 3. Python/R から Rust への準備体操
 
@@ -339,6 +339,8 @@ c = 3
 :bulb: **キーポイント** :bulb:  
 Rust は学習が難しく慣れるまではストレスがたまるポイントがいくつかあります。  
 ガードレールとして存在しているそれらの機能を理解しておくことが大事です。
+
+![image](https://user-images.githubusercontent.com/10294378/163321404-d6e29a64-037e-4fb6-a106-b6b0632cbee7.png)
 
 ## 5. 様々な分野でのRust
 
