@@ -1,5 +1,7 @@
 FROM ubuntu:latest
 
+RUN ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
     gcc-multilib \
