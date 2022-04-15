@@ -184,7 +184,7 @@ cargo run
 **問題**  
 1 から 100 までの数を順に 1 行ずつ出力するプログラムを書いてください。ただし、3 の倍数のときは数の代わりに `Fizz` と、 5 の倍数の時には `Buzz` と表示してください。そして 3 と 5 の倍数の時は `FizzBuzz` と表示してください。
 
-![image](https://user-images.githubusercontent.com/10294378/163309294-26a137ef-ba36-43ca-8a13-853d92f38870.png)
+![163309294-26a137ef-ba36-43ca-8a13-853d92f38870](https://user-images.githubusercontent.com/10294378/163652907-97b37d89-8b60-48c4-9265-b2fd8e9eacf9.png)
 
 ---
 
